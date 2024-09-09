@@ -16,6 +16,10 @@
       "dest": "/app.js"
     },
     {
+      "src": "/purchase",
+      "dest": "/public/purchase.html"
+    },
+    {
       "src": "/(.*)",
       "dest": "/public/$1"
     }
