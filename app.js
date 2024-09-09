@@ -39,7 +39,7 @@ const app = express();
 
 // CORS configuration
 app.use(cors({
-  origin: [], // Add allowed origins here
+  origin: ["https://stocks-akash0406.vercel.app"],
   methods: ["POST", "GET"],
   credentials: true,
 }));
