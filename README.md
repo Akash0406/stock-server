@@ -1,4 +1,13 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/Ie0S5NgP)
+## Local Setup
+
+1. Copy `.env.example` to `.env` and fill in `MONGODB_URI` and `FINNHUB_API_KEY`.
+2. Install dependencies with `npm install`.
+3. Start the app with `npm start`.
+4. Open `http://localhost:4000`.
+
+The browser never calls Finnhub directly. Quote lookup and portfolio totals are served by the Express API so API keys stay on the server.
+
 ## Table of Contents
 1. [Welcome!](#welcome)
 2. [Due Date & Submissions](#due-date--submissions)

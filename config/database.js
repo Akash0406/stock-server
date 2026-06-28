@@ -1,10 +1,12 @@
 const mongoose = require('mongoose');
 
-const uri = 'mongodb+srv://akash0406:Akash%400406@stock-portfolio.xw7wy.mongodb.net/stocks-Akash0406?retryWrites=true&w=majority';
-
 const connectDB = async () => {
   try {
-    await mongoose.connect(uri, {
+    if (!process.env.MONGODB_URI) {
+      throw new Error('MONGODB_URI is not configured');
+    }
+
+    await mongoose.connect(process.env.MONGODB_URI, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
